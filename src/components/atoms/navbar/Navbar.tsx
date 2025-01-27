@@ -47,7 +47,7 @@ export default function Navbar() {
             </Link>
           </ul>
         </div>
-        <div>
+        <div className="md:flex hidden">
           <Button>Hubungi</Button>
         </div>
         <div className="md:hidden flex items-center">

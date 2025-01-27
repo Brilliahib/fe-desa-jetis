@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function HomeJumbotron() {
   return (
     <>
-      <div className="min-h-screen">
+      <section className="min-h-screen">
         <div className="flex justify-center items-center text-center pad-x md:pt-36 pt-28">
           <div className="space-y-4 md:max-w-3xl">
             <h1 className="text-4xl text-zinc-700 lg:text-6xl font-bold tracking-tighter">
@@ -73,7 +73,7 @@ export default function HomeJumbotron() {
             <div className="pointer-events-none absolute inset-y-0 right-0 w-1/5 bg-gradient-to-l from-white dark:from-background"></div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

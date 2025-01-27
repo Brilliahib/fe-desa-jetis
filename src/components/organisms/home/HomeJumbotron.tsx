@@ -27,25 +27,51 @@ export default function HomeJumbotron() {
             </div>
           </div>
         </div>
-        <div className="relative mt-10 md:mt-16 overflow-hidden">
-          <Marquee pauseOnHover className="[--duration:20s]">
-            {asset.map((item, i) => (
-              <div
-                key={i}
-                className="md:mx-2 flex max-w-none cursor-default items-center gap-x-2 text-sm"
-              >
-                <Image
-                  src={item.image || "/vercel.svg"}
-                  alt="logo"
-                  width={500}
-                  height={200}
-                  className="rounded object-cover md:h-[350px] md:w-[500px] w-[300px] h-[200px]"
-                />
-              </div>
-            ))}
-          </Marquee>
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/5 bg-gradient-to-r from-white dark:from-background"></div>
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/5 bg-gradient-to-l from-white dark:from-background"></div>
+        <div className="space-y-4">
+          <div className="relative mt-10 md:mt-16 overflow-hidden">
+            <Marquee pauseOnHover={false} className="[--duration:20s]">
+              {asset.map((item, i) => (
+                <div
+                  key={i}
+                  className="md:mx-2 flex max-w-none cursor-default items-center gap-x-2 text-sm"
+                >
+                  <Image
+                    src={item.image || "/vercel.svg"}
+                    alt="logo"
+                    width={500}
+                    height={200}
+                    className="rounded object-cover md:h-[350px] md:w-[400px] w-[300px] h-[200px]"
+                  />
+                </div>
+              ))}
+            </Marquee>
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/5 bg-gradient-to-r from-white dark:from-background"></div>
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/5 bg-gradient-to-l from-white dark:from-background"></div>
+          </div>
+          <div className="relative mt-10 md:mt-16 overflow-hidden">
+            <Marquee
+              pauseOnHover={false}
+              className="[--duration:20s]"
+              reverse={true}
+            >
+              {asset.map((item, i) => (
+                <div
+                  key={i}
+                  className="md:mx-2 flex max-w-none cursor-default items-center gap-x-2 text-sm"
+                >
+                  <Image
+                    src={item.image || "/vercel.svg"}
+                    alt="logo"
+                    width={500}
+                    height={200}
+                    className="rounded object-cover md:h-[350px] md:w-[400px] w-[300px] h-[200px]"
+                  />
+                </div>
+              ))}
+            </Marquee>
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/5 bg-gradient-to-r from-white dark:from-background"></div>
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/5 bg-gradient-to-l from-white dark:from-background"></div>
+          </div>
         </div>
       </div>
     </>

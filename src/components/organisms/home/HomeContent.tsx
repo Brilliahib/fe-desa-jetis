@@ -1,6 +1,7 @@
 import HomeAbout from "./HomeAbout";
 import HomeJumbotron from "./HomeJumbotron";
 import HomeNews from "./HomeNews";
+import HomeUMKM from "./HomeUMKM";
 
 export default function HomeContent() {
   return (
@@ -9,6 +10,7 @@ export default function HomeContent() {
         <HomeJumbotron />
         <HomeAbout />
         <HomeNews />
+        <HomeUMKM />
       </div>
     </>
   );
